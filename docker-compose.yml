@@ -1,0 +1,13 @@
+services:
+  server:
+    image: kkoch986/ai-skeletons-playback
+    ports:
+      - "3000:3000"
+    devices: 
+      - /dev/snd 
+    environment:
+      LOG_LEVEL: DEBUG
+      HOST: 
+      PORT: 3000
+      OSC_HOST: 127.0.0.1
+      OSC_PORT: 7771
